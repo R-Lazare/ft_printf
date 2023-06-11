@@ -40,6 +40,12 @@ int	ft_print_p(unsigned long long p)
 	int	count;
 
 	count = 0;
+	if (!p)
+	{
+		write(1, "(null), 6);
+		count = 6;
+		return (count);
+	}
 	ft_putstr_fd("0x", 1);
 	count += 2;
 	count += ft_putnbr_base_ll(p, "0123456789abcdef");
