@@ -42,7 +42,7 @@ int	ft_print_p(unsigned long long p)
 	count = 0;
 	if (!p)
 	{
-		write(1, "(null), 6);
+		write(1, "(null)", 6);
 		count = 6;
 		return (count);
 	}
