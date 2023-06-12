@@ -6,7 +6,7 @@
 /*   By: rluiz <rluiz@student.42lehavre.fr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/09 18:45:17 by rluiz             #+#    #+#             */
-/*   Updated: 2023/06/09 19:23:57 by rluiz            ###   ########.fr       */
+/*   Updated: 2023/06/12 15:48:43 by rluiz            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,8 @@ int	ft_print_p(unsigned long long p)
 	count = 0;
 	if (!p)
 	{
-		write(1, "(null)", 6);
-		count = 6;
+		write(1, "(nil)", 5);
+		count = 5;
 		return (count);
 	}
 	ft_putstr_fd("0x", 1);
